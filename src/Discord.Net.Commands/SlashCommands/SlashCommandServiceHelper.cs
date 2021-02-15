@@ -219,7 +219,7 @@ namespace Discord.SlashCommands
         public static async Task RegisterCommands(DiscordSocketClient socketClient, Dictionary<string, SlashCommandInfo> commandDefs, SlashCommandService slashCommandService, CommandRegistrationOptions options)
         {
             // Get existing commmands
-            ulong devGuild = 386658607338618891;
+            ulong devGuild = 314734113854717952;
             var existingCommands = await socketClient.Rest.GetGuildApplicationCommands(devGuild).ConfigureAwait(false);
             List<string> existingCommandNames = new List<string>();
             foreach (var existingCommand in existingCommands)
